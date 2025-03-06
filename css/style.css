@@ -148,45 +148,92 @@ h1{
     text-transform: uppercase;
 }
 
-button{
-    font-size: 1.5rem;
+header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#lang-select {
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: var(--p-font-weight);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid 2px var(--black);
+    cursor: pointer;
+}
+
+#lang-select:hover {
+    background-color: var(--yellow);
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.page1 {
+    position: relative;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160dvh;
+}
+
+.star {
+    position: absolute;
+    top: -125px;
+    left: -295px;
+    width: 70dvh;
+    z-index: 2;
+}
+
+.duo-fruit {
+    position: absolute;
+    bottom: -1px;
+    right: -164px;
+    width: 68vh;
+    z-index: 2;
+}
+
+main h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 20px;
+    position: absolute;
+    top: 220px;
+    z-index: 2;
+}
+
+#discover-button{
+    font-size: 2.5rem;
     font-weight: 700;
     font-family: var(--font-primary);
     color: var(--black);
     background-color: var(--green);
     border: none;
     padding: 15px 30px;
-    position: relative;
+    position: absolute;
+    bottom: 180px;
+    z-index: 2;
     cursor: pointer;
-    border-radius: 15px;
-    box-shadow: 5px 5px var(--darkorange);
+    width: auto;
+    border-radius: 30px;
+    border: solid 2px var(--black);
+    box-shadow: -5px 5px var(--darkorange);
 }
 
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 7px 7px var(--red);
-}
-
-.star {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100px;
-}
-
-duo-fruit {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 150px;
-}
-
-.page1 {
-    background: var(--white);
-    width: 80%;
-    max-width: 900px;
-    height: auto;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+#discover-button:hover {
+    background-color: var(--darkorange);
+    border-radius: 30px;
+    border: solid 2px var(--black);
+    box-shadow: -5px 5px var(--green);
 }
