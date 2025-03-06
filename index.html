@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio rétro de Marie-France Lunganga">
+    <meta name="keywords" content="portfolio, retro, web, design, development, front-end, back-end, full-stack, Marie-France Lunganga, product">
+    <meta name="author" content="Marie-France Lunganga">
     <title>Retro portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/logo/Variation.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div class="start__page">
-        <img src="assets/icons/etoile.svg" alt="étoile" class="star__icon">
-        
-        <div class="window">
-            <div class="window__content">
-                <img src="assets/pages/page1.svg" alt="page icon" class="page__icon">
-                
-                <div class="welcome__box">
-                    <h1>BIENVENUE</h1>
-                    <button id="discover__btn">Me découvrir</button>
-                </div>
-                
-                <div class="cherries">
-                    <img src="assets/icons/duo-fruit.svg" alt="cerises" class="cherries__icon">
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="src/script.js"></script>
+    <header>
+        <select name="language" id="lang-select" title="choisir une langue">
+            <option value="fr">🇫🇷</option>
+            <option value="en">🇬🇧</option>
+            <option value="ko">🇰🇷</option>
+        </select>
+    </header>
+
+    <main>
+        <h1 data-i18n="welcome">BIENVENUE</h1>
+        <button data-i18n="discover">Me découvrir</button>
+        <img src="assets/icons/etoile.svg" alt="etoile" class="star">
+        <img src="assets/icons/duo-fruit.svg" alt="icon duo fruit" class="duo-fruit">
+        <img src="assets/pages/page1.svg" alt="icon page 1" class="page1">
+    </main>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/translation.js"></script>
 </body>
 </html>
