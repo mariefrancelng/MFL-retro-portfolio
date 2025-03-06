@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Chalty';
+    src: url('/assets/fonts/Chalty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --font-primary: 'Chalty', sans-serif;
+
+    --h1-title-size: 2.5rem;
+    --h1-line-height: 1.2;
+
+    --h2-subtitle-size: 2rem;
+    --h2-line-height: 1.3;
+
+    --h3-subtitle-size: 1.5rem;
+    --h3-line-height: 1.4;
+
+    --p-body-size: 1rem;
+    --p-line-height: 1.6
+
+    --white: #fff;
+    --black: #000
+    --yellow: #FFCD04;
+    --blue: #4780C3;
+    --pink: #F791C3;
+    --purple: #5F58A6;
+    --darkOrange: #E63C23;
+    --darkPink: #ED1B68;
+    --beige: #FFE8CE;
+    --green: #53BA65;
+}
