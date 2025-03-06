@@ -1,0 +1,112 @@
+/* @media pour index.html */
+@media (max-width: 1024px) {
+    #discover-button {
+        font-size: 2rem;
+        padding: 12px 24px;
+        bottom: 45%;
+        left: 46%;
+    }
+
+    #lang-select {
+        font-size: 1rem; 
+        padding: 6px 12px; 
+    }
+
+    .star {
+        width: 50%;
+        top: -13%;
+        left: -15%;
+    }
+
+    .duo-fruit {
+        width: 46%;
+        bottom: 25%;
+        right: -15%;
+    }
+
+    .page1 {
+        width: 102%;
+        bottom: 10%;
+        left: 57%;
+    }
+
+    main h1 {
+        font-size: 6rem;
+        top: 29%;
+        left: 33%;
+    }
+}
+
+@media (max-width: 768px) {
+    #discover-button {
+        font-size: 1.5rem; 
+        padding: 10px 20px; 
+        bottom: 72%; 
+    }
+
+    #lang-select {
+        font-size: 0.9rem; 
+        padding: 5px 10px; 
+    }
+
+    .star {
+        width: 55%;
+        top: -8%;
+        left: -22%;
+    }
+
+    .duo-fruit {
+        width: 38%;
+        top: 21%;
+        right: -10%;
+    }
+
+    .page1 {
+        width: 104%;
+        top: -30%;
+        left: 56%;
+    }
+
+    main h1 {
+        font-size: 4rem; 
+        top: 14%; 
+    }
+}
+
+@media (max-width: 480px) {
+    #discover-button {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+        bottom: 30%;
+        left: 37%;
+    }
+
+    #lang-select {
+        font-size: 0.8rem; 
+        padding: 4px 8px; 
+    }
+
+    .star {
+        width: 60%;
+        top: -17%;
+        left: -21%;
+    }
+
+    .duo-fruit {
+        width: 40%;
+        top: 56%;
+        right: -5%;
+    }
+
+    .page1 {
+        width: 110%;
+        left: 57%;
+        top: 0%;
+    }
+
+    main h1 {
+        font-size: 4rem;
+        top: 37%;
+        left: 21%;
+    }
+}
