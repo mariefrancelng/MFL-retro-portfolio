@@ -6,12 +6,53 @@
     <meta name="description" content="Portfolio rétro de Marie-France Lunganga">
     <meta name="keywords" content="portfolio, retro, web, design, development, front-end, back-end, full-stack, Marie-France Lunganga, product">
     <meta name="author" content="Marie-France Lunganga">
-    <title>Retro portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo/Variation.svg">
+    <title> Home - Retro portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo/Logo.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo/Logo.svg" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#">Projets</a>
+                <select name="language" id="lang-select" title="choisir une langue">
+                    <option value="fr">🇫🇷</option>
+                    <option value="en">🇬🇧</option>
+                    <option value="ko">🇰🇷</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section id="hero">
+            <div class="presentation">
+                <h1>BONJOUR !</h1>
+                <p>Play. Pause. Rewind.</p>
+                <p>Salut, je suis Marie-France ! Mon style ? Un mix entre le rétro et l’innovation, inspiré des vieilles affiches, des interfaces analogiques et du web d’aujourd’hui. Ce portfolio, c’est mon terrain de jeu créatif : entre typographies vintage, couleurs vibrantes et projets audacieux. <br> Prêt(e) pour un voyage dans le temps digital ? C’est parti !</p>
+            </div>
+            <div class="pages__buttons">
+                <button class="page-button" data-target="about">À propos</button>
+                <button class="page-button" data-target="projects">Projets</button>
+                <button class="page-button" data-target="contact">Contact</button>
+            </div>
+        </section>
+
+        <section id="job-search">
+            <h2>Je suis à la recherche d’un emploi qui soit...</h2>
+            <div id="job-qualities"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Marie-France Lunganga. Tous droits réservés.</p>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="js/translation.js"></script>

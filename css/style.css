@@ -179,50 +179,115 @@ main {
     text-align: center;
 }
 
-.page1 {
-    position: relative;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 160dvh;
+main h1 {
+    font-size: 8rem;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: var(--h1-font-weight);
+    margin-bottom: 60vh;
 }
 
 .star {
     position: absolute;
-    top: -125px;
-    left: -295px;
-    width: 70dvh;
+    top: -18vh;
+    left: -25vw;
+    width: 55vw;
+    max-width: 590px;
+    min-width: 300px;
     z-index: 2;
+    transform: rotate(-15deg);
+    pointer-events: none;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
 .duo-fruit {
     position: absolute;
-    bottom: -1px;
-    right: -164px;
-    width: 68vh;
+    bottom: -6vh;
+    right: -20vh;
+    width: 74vh;
+    max-width: 590px;
     z-index: 2;
+    pointer-events: none;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
-main h1 {
-    font-size: 8rem;
-    text-transform: uppercase;
-    color: var(--black);
-    margin-bottom: 20px;
-    position: absolute;
-    top: 220px;
-    z-index: 2;
+.browser-window .content {
+    background-color: var(--white);
+    padding: 40px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 1100px;
+    height: 900px;
+    background-image: url("/assets/pagesbg/MaskGroup.png");
+    background-size: 1500px 1600px;
+    background-repeat: no-repeat; 
+    background-position: center;
+    overflow: hidden;
+}
+
+.browser-window {
+    margin: 50px auto;
+    border-radius: 30px;
+    border: solid 10px var(--black);
+    box-shadow: 15px 15px 0 var(--black);
+    overflow: hidden;
+    font-family: var(--font-primary);
+}
+
+.browser-window .title-bar {
+    background-color: var(--darkorange);
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 10px var(--black);
+}
+
+.browser-window .title-bar .buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.browser-window .title-bar .buttons .button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.browser-window .title-bar .buttons .button.minimize {
+    background-color: var(--yellow);
+}
+
+.browser-window .title-bar .buttons .button.maximize {
+    background-color: var(--green); 
+}
+
+.browser-window .title-bar .buttons .button.close {
+    background-color: var(--blue); 
 }
 
 #discover-button{
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: var(--h2-font-weight);
     font-family: var(--font-primary);
     color: var(--black);
     background-color: var(--green);
     border: none;
     padding: 15px 30px;
     position: absolute;
-    bottom: 180px;
+    left: 50vh;
+    bottom: 30vh;
     z-index: 2;
     cursor: pointer;
     width: auto;

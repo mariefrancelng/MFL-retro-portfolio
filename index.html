@@ -21,11 +21,25 @@
     </header>
 
     <main>
-        <h1 data-i18n="welcome">BIENVENUE</h1>
-        <button id="discover-button" data-i18n="discover">Me découvrir</button>
-        <img src="assets/icons/etoile.svg" alt="etoile" class="star">
-        <img src="assets/icons/duo-fruit.svg" alt="icon duo fruit" class="duo-fruit">
-        <img src="assets/pagesbg/page1.png" alt="icon page 1" class="page1">
+        <!-- Éléments décoratifs -->
+        <img src="assets/icons/etoile.svg" alt="étoile" class="star">
+        <img src="assets/icons/duo-fruit.svg" alt="fruits" class="duo-fruit">
+    
+        <!-- Fenêtre navigateur -->
+        <div class="browser-window">
+            <div class="title-bar">
+                <div class="title"></div>
+                <div class="buttons">
+                    <div class="button minimize"></div>
+                    <div class="button maximize"></div>
+                    <div class="button close"></div>
+                </div>        
+            </div>
+            <div class="content">
+                <h1 data-i18n="welcome">BIENVENUE</h1>
+                <button id="discover-button" data-i18n="discover">Me découvrir</button>
+            </div>
+        </div>
     </main>
 
     <script src="js/script.js"></script>
