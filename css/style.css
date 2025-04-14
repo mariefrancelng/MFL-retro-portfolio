@@ -130,7 +130,7 @@ p {
     margin-bottom: 20px;
 }
 
-body{
+#index{
     background-color: var(--beige);
     display: flex;
     flex-direction: column;
@@ -157,16 +157,25 @@ header {
 
 #lang-select {
     font-family: var(--font-primary);
+    font-weight: 700;
     font-size: 1.2rem;
-    font-weight: var(--p-font-weight);
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: solid 2px var(--black);
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    border: 2px solid var(--black);
+    background-color: var(--pink);
+    color: var(--black);
     cursor: pointer;
+    appearance: none;
+    box-shadow: 4px 4px 0 var(--black);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 1;
 }
 
 #lang-select:hover {
     background-color: var(--yellow);
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0 var(--black);
 }
 
 main {

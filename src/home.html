@@ -4,57 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio rétro de Marie-France Lunganga">
-    <meta name="keywords" content="portfolio, retro, web, design, development, front-end, back-end, full-stack, Marie-France Lunganga, product">
+    <meta name="keywords" content="portfolio, retro, web, design, development">
     <meta name="author" content="Marie-France Lunganga">
-    <title> Home - Retro portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo/Logo.svg">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Home - Portfolio Retro</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/Variation.svg">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-    <!-- Barre de navigation -->
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="assets/logo/Logo.svg" alt="Logo">
-            </div>
-            <div class="nav-links">
-                <a href="#">Projets</a>
-                <select name="language" id="lang-select" title="choisir une langue">
-                    <option value="fr">🇫🇷</option>
-                    <option value="en">🇬🇧</option>
-                    <option value="ko">🇰🇷</option>
-                </select>
-            </div>
-        </nav>
-    </header>
+<body id="home">
 
+    <nav>
+        <div class="logo">
+            <img src="/assets/logo/Logo.svg"  alt="Logo Portfolio" class="logo-img">
+        </div>
+        <div class="nav-links">
+            <select name="language" id="lang-select" title="choisir une langue">
+                <option value="fr">🇫🇷</option>
+                <option value="en">🇬🇧</option>
+                <option value="ko">🇰🇷</option>
+            </select>
+        </div>
+    </nav>
+
+    <section id="introduction_container" class="hero-section">
+
+        <div class="hero-content">
+            <h1 class="hero-title">BONJOUR !</h1>
+            
+            <img src="/assets/images/8E8EAB9A-5087-4604-B2F8-18577C40784D.PNG" alt="Marie-France Lunganga" class="hero-photo">
+
+            <div class="hero-text">
+                <img src="/assets/icons/OrangeStar.svg" alt="Orange Star" class="orange-star">
+                <p><b>⏪ Play. Pause. Rewind ⏩</b></p>
+                <p>Salut, je suis Marie-France ! Mon style ? Un mix entre le rétro et l'innovation, inspiré des vieilles affiches, des interfaces analogiques et du web d'aujourd'hui. Ce portfolio, c'est mon terrain de jeu créatif : entre typographies vintage, couleurs vibrantes et projets audacieux.</p>
+                <p>Prêt(e) pour un voyage dans le temps digital ? C'est parti ! 🚀</p>
+                <img src="/assets/icons/PinkStar.svg" alt="Pink Star" class="pink-star">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="main_container" class="tabbed-interface">
+        <div class="content-tabs">
+            <button class="tab-button active" data-tab="about">À PROPOS</button>
+            <button class="tab-button" data-tab="projects">MES PROJETS</button>
+            <button class="tab-button" data-tab="skills">COMPÉTENCES</button>
+        </div>
     
-    <main>
-        <section id="hero">
-            <div class="presentation">
-                <h1>BONJOUR !</h1>
-                <p>Play. Pause. Rewind.</p>
-                <p>Salut, je suis Marie-France ! Mon style ? Un mix entre le rétro et l’innovation, inspiré des vieilles affiches, des interfaces analogiques et du web d’aujourd’hui. Ce portfolio, c’est mon terrain de jeu créatif : entre typographies vintage, couleurs vibrantes et projets audacieux. <br> Prêt(e) pour un voyage dans le temps digital ? C’est parti !</p>
+        <div class="tab-content active" id="about-tab">
+            <div class="about-content">
+                <p>
+                    I'm a software engineer by trade and product designer by practice. I started my professional career as a UI Design Intern after switching from a pre-med college path last minute. I discovered my passion and love for design through my studio art major.
+                    <br>
+                    After a year as a product designer, I pivoted into software engineering at Capital One to learn more about the coding world. I have been lucky to be able to incorporate my love for design in all of my different engineering roles so far. Now, I'm working as a freelance product and brand designers to help people bring their apps and ideas to life.
+                    <br>
+                    My background as a product designer and engineer allows me to bridge the gap between engineers and designers as well as open up the world of design to engineers. I have a dedication for clean and intuitive design that brings simplicity and joy for users.
+                </p>
             </div>
-            <div class="pages__buttons">
-                <button class="page-button" data-target="about">À propos</button>
-                <button class="page-button" data-target="projects">Projets</button>
-                <button class="page-button" data-target="contact">Contact</button>
+        </div>
+    
+        <div class="tab-content active" id="projects-tab">
+            <div class="horizontal-scroll">
+                <div class="project-card" id="budme">
+                    <img src="/assets/logo/BudMe.svg" alt="logo BudMe" class="project-logo">
+                    <button class="project-button">En savoir plus</button>
+                </div>
+                <div class="project-card" id="guardian">
+                    <img src="/assets/logo/Guardian.svg" alt="logo Guardian" class="project-logo">
+                    <button class="project-button">En savoir plus</button>
+                </div>
+                <div class="project-card" id="mingle">
+                    <img src="/assets/logo/Mingle.svg" alt="logo Mingle" class="project-logo">
+                    <button class="project-button">En savoir plus</button>
+                </div>
+                <div class="project-card" id="aebox">
+                    <img src="/assets/logo/aespa.svg" alt="logo Aebox" class="project-logo">
+                    <button class="project-button">En savoir plus</button>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section id="job-search">
-            <h2>Je suis à la recherche d’un emploi qui soit...</h2>
-            <div id="job-qualities"></div>
-        </section>
-    </main>
+        <div class="tabcontent" id="skills-tab">
+            <div class="content-tabs">
+                <button class="skills-tab" data-tab="webdev">DÉVELOPPEMENT WEB</button>
+                <button class="skills-tab" data-tab="logiciel">LOGICIEL</button>
+                <button class="skills-tab" data-tab="design">UI-UX DESIGN</button>
+                <button class="skills-tab" data-tab="devops">DEVOPS</button>
+            </div>
 
-    <footer>
-        <p>&copy; 2025 Marie-France Lunganga. Tous droits réservés.</p>
+            <div class="skills-content">
+                <div class="webdev">
+                    <h2>Développement web</h2>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>Javascript</p>
+                    <p>React</p>
+                    <p>React Native</p>
+                    <p>Tailwind CSS</p>
+                    <p>Node.Js</p>
+                    <p>Vite Js</p>
+                </div>
+
+                <div class="logiciel">
+                    <h2>Logiciels</h2>
+                    <p>GitHub</p>
+                    <p>Visual Studio Code</p>
+                    <p>Xcode</p>
+                    <p>Figma</p>
+                    <p>Unity</p>
+                    <p>Milanote</p>
+                    <p>Notion</p>
+                    <p>Canva</p>
+                    <p>Illustrator</p>
+                    <p>Premiere Pro</p>
+                    <p>Adobe XD</p>
+                    <p>Cursor AI</p>
+                </div>
+
+                <div class="design">
+                    <h2>UX/UI Design</h2>
+                    <p>UI Design</p>
+                    <p>UX Design</p>
+                    <p>Prototyping</p>
+                    <p>Wireframing</p>
+                    <p>Branding</p>
+                    <p>Graphic Design</p>
+                    <p>Web Design</p>
+                    <p>Mobile Design</p>
+                    <p>Entretiens Utilisateurs</p>
+                    <p>User Stories</p>
+                </div>
+
+                <div class="devops">
+                    <h2>Devops & QA Testing</h2>
+                    <p>CI/CD</p>
+                    <p>Test Unitaire</p>
+                    <p>Jenkins</p>
+                    <p>GitLab</p>
+                    <p>Jira</p>
+                    <p>Azure Devops</p>
+                    <p>Katalon Studio</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- [4] Footer -->
+    <footer class="main-footer">
+        <!-- Image décorative -->
+        <img src="assets/decorations/duo-fruit.svg" alt="Décoration fruits" class="footer-decoration">
+        
+        <!-- Liens/contacts -->
+        <div class="footer-links">
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">CV</a>
+            <a href="#" class="social-link">Email</a>
+            <a href="#" class="social-link">GitHub</a>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2025 – Marie-France Lunganga</p>
+            <p>Tout droits réservés</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
     <script src="js/translation.js"></script>
+    <script src="js/tabs.js"></script> <!-- Script pour la navigation par onglets -->
 </body>
 </html>
