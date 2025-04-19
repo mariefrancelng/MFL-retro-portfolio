@@ -111,3 +111,42 @@
     }
 }
 
+/* @media pour home.html */
+@media (max-width: 768px) {
+    .project-card {
+        width: 300px;
+        height: 400px;
+    }
+    
+    .project-logo {
+        width: 150px;
+    }
+    
+    .project-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .skills-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-decoration {
+        width: 150px;
+        right: 20px;
+        bottom: -20px;
+    }
+    
+    .footer-links {
+        gap: 1.5rem;
+    }
+    
+    .social-link {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
+    }
+    
+    .copyright p {
+        font-size: 0.9rem;
+    }
+}

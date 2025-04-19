@@ -45,7 +45,7 @@
     </section>
 
     <section id="main_container" class="tabbed-interface">
-        <div class="content-tabs">
+        <div class="content-title">
             <button class="tab-button active" data-tab="about">À PROPOS</button>
             <button class="tab-button" data-tab="projects">MES PROJETS</button>
             <button class="tab-button" data-tab="skills">COMPÉTENCES</button>
@@ -66,94 +66,263 @@
         <div class="tab-content active" id="projects-tab">
             <div class="horizontal-scroll">
                 <div class="project-card" id="budme">
-                    <img src="/assets/logo/BudMe.svg" alt="logo BudMe" class="project-logo">
-                    <button class="project-button">En savoir plus</button>
+                    <div class="window-header">
+                        <div class="dot yellow"></div>
+                        <div class="dot pink"></div>
+                        <div class="dot purple"></div>
+                        <img src="/assets/icons/blueStar.svg" alt="blue star" class="blue-star">
+                    </div>  
+
+                    <div class="window-body">
+                        <img src="/assets/logo/BudMe.svg" alt="logo BudMe" class="project-logo">
+                        <button class="project-link" data-modal="budme-modal">
+                            En savoir plus
+                        </button>
+                        <img src="/assets/icons/yellowStar.svg" alt="yellow star" class="yellow-star">
+                    </div>
                 </div>
                 <div class="project-card" id="guardian">
-                    <img src="/assets/logo/Guardian.svg" alt="logo Guardian" class="project-logo">
-                    <button class="project-button">En savoir plus</button>
+                    <div class="window-header">
+                        <div class="dot yellow"></div>
+                        <div class="dot pink"></div>
+                        <div class="dot purple"></div>
+                        <img src="/assets/icons/blueStar.svg" alt="blue star" class="blue-star">
+                    </div> 
+
+                    <div class="window-body">
+                        <img src="/assets/logo/Guardian.svg" alt="logo Guardian" class="project-logo">
+                        <button class="project-link" data-modal="guardian-modal">En savoir plus</button>
+                        <img src="/assets/icons/yellowStar.svg" alt="yellow star" class="yellow-star">
+                    </div>
+                    
                 </div>
                 <div class="project-card" id="mingle">
-                    <img src="/assets/logo/Mingle.svg" alt="logo Mingle" class="project-logo">
-                    <button class="project-button">En savoir plus</button>
+                    <div class="window-header">
+                        <div class="dot yellow"></div>
+                        <div class="dot pink"></div>
+                        <div class="dot purple"></div>
+                        <img src="/assets/icons/blueStar.svg" alt="blue star" class="blue-star">
+                    </div> 
+
+                    <div class="window-body">
+                        <img src="/assets/logo/Mingle.svg" alt="logo Mingle" class="project-logo">
+                        <button class="project-link" data-modal="mingle-modal">En savoir plus</button>
+                        <img src="/assets/icons/yellowStar.svg" alt="yellow star" class="yellow-star">
+                    </div>
+                    
                 </div>
                 <div class="project-card" id="aebox">
-                    <img src="/assets/logo/aespa.svg" alt="logo Aebox" class="project-logo">
-                    <button class="project-button">En savoir plus</button>
+                    <div class="window-header">
+                        <div class="dot yellow"></div>
+                        <div class="dot pink"></div>
+                        <div class="dot purple"></div>
+                        <img src="/assets/icons/blueStar.svg" alt="blue star" class="blue-star">
+                    </div> 
+
+                    <div class="window-body">
+                        <img src="/assets/logo/aespa.svg" alt="Aespa's logo" class="project-logo">
+                        <button class="project-link" data-modal="aebox-modal">En savoir plus</button>
+                        <img src="/assets/icons/yellowStar.svg" alt="yellow star" class="yellow-star">
+                    </div> 
                 </div>
             </div>
         </div>
 
         <div class="tabcontent" id="skills-tab">
+            <img src="/assets/icons/retro pc icon.svg" alt="retro pc icon" class="retro-pc">
+            
+            <!-- Boutons de sélection des compétences -->
             <div class="content-tabs">
                 <button class="skills-tab" data-tab="webdev">DÉVELOPPEMENT WEB</button>
                 <button class="skills-tab" data-tab="logiciel">LOGICIEL</button>
                 <button class="skills-tab" data-tab="design">UI-UX DESIGN</button>
-                <button class="skills-tab" data-tab="devops">DEVOPS</button>
+                <button class="skills-tab" data-tab="devops">DEVOPS & QA TESTING</button>
             </div>
-
+        
+            <!-- Contenu des compétences -->
             <div class="skills-content">
-                <div class="webdev">
-                    <h2>Développement web</h2>
-                    <p>HTML5</p>
-                    <p>CSS3</p>
-                    <p>Javascript</p>
-                    <p>React</p>
-                    <p>React Native</p>
-                    <p>Tailwind CSS</p>
-                    <p>Node.Js</p>
-                    <p>Vite Js</p>
+                <!-- DÉVELOPPEMENT WEB -->
+                <div class="window-stack" id="webdev">
+                    <div class="window-layer layer-1"></div>
+                    <div class="window-layer layer-2"></div>
+                    <div class="window-layer layer-3">
+                        <div class="title-bar">
+                            <div class="close-button">✖</div>
+                        </div>
+                        <div class="window-content">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>Javascript</p>
+                            <p>React</p>
+                            <p>React Native</p>
+                            <p>Tailwind CSS</p>
+                            <p>Node.Js</p>
+                            <p>Vite Js</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="logiciel">
-                    <h2>Logiciels</h2>
-                    <p>GitHub</p>
-                    <p>Visual Studio Code</p>
-                    <p>Xcode</p>
-                    <p>Figma</p>
-                    <p>Unity</p>
-                    <p>Milanote</p>
-                    <p>Notion</p>
-                    <p>Canva</p>
-                    <p>Illustrator</p>
-                    <p>Premiere Pro</p>
-                    <p>Adobe XD</p>
-                    <p>Cursor AI</p>
+                <!-- LOGICIEL -->
+                <div class="window-stack" id="logiciel">
+                    <div class="window-layer layer-1"></div>
+                    <div class="window-layer layer-2"></div>
+                    <div class="window-layer layer-3">
+                        <div class="title-bar">
+                            <div class="close-button">✖</div>
+                        </div>
+                        <div class="window-content">
+                            <p>GitHub</p>
+                            <p>Visual Studio Code</p>
+                            <p>Xcode</p>
+                            <p>Figma</p>
+                            <p>Unity</p>
+                            <p>Milanote</p>
+                            <p>Notion</p>
+                            <p>Canva</p>
+                            <p>Illustrator</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="design">
-                    <h2>UX/UI Design</h2>
-                    <p>UI Design</p>
-                    <p>UX Design</p>
-                    <p>Prototyping</p>
-                    <p>Wireframing</p>
-                    <p>Branding</p>
-                    <p>Graphic Design</p>
-                    <p>Web Design</p>
-                    <p>Mobile Design</p>
-                    <p>Entretiens Utilisateurs</p>
-                    <p>User Stories</p>
+                <!-- UI-UX DESIGN -->
+                <div class="window-stack" id="design">
+                    <div class="window-layer layer-1"></div>
+                    <div class="window-layer layer-2"></div>
+                    <div class="window-layer layer-3">
+                        <div class="title-bar">
+                            <div class="close-button">✖</div>
+                        </div>
+                        <div class="window-content">
+                            <p>UI Design</p>
+                            <p>UX Design</p>
+                            <p>Prototyping</p>
+                            <p>Wireframing</p>
+                            <p>Branding</p>
+                            <p>Graphic Design</p>
+                            <p>Web Design</p>
+                            <p>Mobile Design</p>
+                            <p>Entretiens Utilisateurs</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="devops">
-                    <h2>Devops & QA Testing</h2>
-                    <p>CI/CD</p>
-                    <p>Test Unitaire</p>
-                    <p>Jenkins</p>
-                    <p>GitLab</p>
-                    <p>Jira</p>
-                    <p>Azure Devops</p>
-                    <p>Katalon Studio</p>
+        
+                <!-- DEVOPS & QA TESTING -->
+                <div class="window-stack" id="devops">
+                    <div class="window-layer layer-1"></div>
+                    <div class="window-layer layer-2"></div>
+                    <div class="window-layer layer-3">
+                        <div class="title-bar">
+                            <div class="close-button">✖</div>
+                        </div>
+                        <div class="window-content">
+                            <p>CI/CD</p>
+                            <p>Test Unitaire</p>
+                            <p>Jenkins</p>
+                            <p>GitLab</p>
+                            <p>Jira</p>
+                            <p>Azure Devops</p>
+                            <p>Katalon Studio</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+              
+    </section>
 
+    <section id="modal_projets">
+        <!-- BudMe Modal -->
+        <div class="modal-overlay" id="budme-modal">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <span class="close-modal">&times;</span>
+                </div>
+        
+                <div class="modal-body">
+                    <img src="/assets/logo/BudMe.svg" alt="logo BudMe" class="modal-logo">
+                    <p>Une application hybride conçue pour faciliter l'intégration des nouveaux arrivants en entreprise et les accompagner dans leur montée en compétences. Grâce à un double matching intelligent, BudMe connecte chaque employé à un Buddy Social, basé sur sa personnalité et ses centres d'intérêt, ainsi qu'à un Expert Technique, en fonction de ses besoins métier. Une solution pensée pour rendre l'onboarding plus fluide et humain !</p>
+                    
+                    <div class="modal-prototype">
+                        <a href="https://www.figma.com/proto/RHBMw9P1yD3L45RZgdJhip/BudMe---Hackathon?page-id=2%3A84&node-id=4072-3&starting-point-node-id=4072%3A3&show-proto-sidebar=1&t=CP59W79AaNMuDgFb-1" class="prototype-link" target="_blank" rel="noopener noreferrer">
+                            Prototype
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Guardian Modal -->
+        <div class="modal-overlay" id="guardian-modal">
+            <div class="modal-content">
+                
+                <div class="modal-header guardian-header">
+                    <span class="close-modal">&times;</span>
+                </div>
+        
+                <div class="modal-body">
+                    <img src="/assets/logo/guardian.svg" alt="logo guardian" class="modal-logo">
+                    <p>Une application engagée sur les objectifs de développement durable de l'ONU, visant à éduquer les populations confrontées aux catastrophes naturelles. Elle leur permet d'acquérir les bons réflexes, de protéger leurs proches et leurs voisins, et ainsi de mieux faire face aux situations d'urgence.</p>
+                    
+                    <div class="modal-prototype">
+                        <a href="https://www.figma.com/proto/ti49iUGHHJG5w8Ne996ISm/Guardian-App?page-id=1%3A3&node-id=5726-20557&starting-point-node-id=5726%3A20557&show-proto-sidebar=1&t=f2ZEnYHFYVQwFhb8-1" class="prototype-link" target="_blank" rel="noopener noreferrer">
+                            Prototype
+                        </a>
+                        <a href="https://la-toile-emlyon.github.io/p3-projet-de-groupe-guardian/" target="_blank" rel="noopener noreferrer" class="prototype-link">Landing page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Mingle Modal -->
+        <div class="modal-overlay" id="mingle-modal">
+            <div class="modal-content">
+                
+                <div class="modal-header mingle-header">
+                    <span class="close-modal">&times;</span>
+                </div>
+        
+                <div class="modal-body">
+                    <img src="/assets/logo/mingle.svg" alt="logo mingle" class="modal-logo">
+                    <p>L'idée de Mingle est née de l'observation de la fragmentation du processus de planification d'événements sur différentes plateformes. Avec Mingle, l'objectif était de créer une plateforme centralisée qui soit intuitive, visuellement attrayante et personnalisée en fonction du type d'événement que les utilisateurs souhaitent organiser. Qu'il s'agisse d'une rencontre décontractée autour d'un café ou d'un grand festival, Mingle s'adapte aux besoins de ses utilisateurs.</p>
+                    
+                    <div class="modal-prototype">
+                        <a href="https://www.figma.com/proto/xXGfD8OHFBMnP3RqcTlmex/La-Toile---App-Event?page-id=1%3A2&node-id=4606-1920&starting-point-node-id=4606%3A1920&show-proto-sidebar=1&t=XmHgTXJPIzUsdNOf-1" class="prototype-link" target="_blank" rel="noopener noreferrer">
+                            Prototype
+                        </a>
+                        <a href="https://www.figma.com/proto/3sYNkM5F5p1fan4O58agGq/Mingle-case-study?page-id=0%3A1&node-id=45-8&starting-point-node-id=45%3A8&scaling=scale-down-width&content-scaling=fixed&t=IEsKVUnpuXCy2Ehl-1" target="_blank" rel="noopener noreferrer" class="prototype-link">Case study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Aebox Modal -->
+        <div class="modal-overlay" id="aebox-modal">
+            <div class="modal-content">
+                
+                <div class="modal-header aebox-header">
+                    <span class="close-modal">&times;</span>
+                </div>
+        
+                <div class="modal-body">
+                    <img src="/assets/logo/aespa.svg" alt="logo aespa" class="modal-logo">
+                    <p>Une page web mettant en avant l'album Armageddon d'Aespa. Ce projet allie design immersif et interactivité pour promouvoir leur travail et offrir une expérience fluide aux visiteurs. Il m'a permis d'explorer le web design et le développement tout en valorisant un univers qui me passionne.</p>
+                    
+                    <div class="modal-prototype">
+                        <a href="https://mariefrancelng.github.io/Aebox/" class="prototype-link" target="_blank" rel="noopener noreferrer">
+                            Aebox
+                        </a>
+                        <a href="https://github.com/mariefrancelng/Aebox" target="_blank" rel="noopener noreferrer" class="prototype-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- [4] Footer -->
     <footer class="main-footer">
         <!-- Image décorative -->
-        <img src="assets/decorations/duo-fruit.svg" alt="Décoration fruits" class="footer-decoration">
+        <img src="/assets/icons/Yellowpersona.svg" alt="Décoration fruits" class="footer-decoration">
         
         <!-- Liens/contacts -->
         <div class="footer-links">
@@ -165,12 +334,11 @@
         
         <!-- Copyright -->
         <div class="copyright">
-            <p>© 2025 – Marie-France Lunganga</p>
-            <p>Tout droits réservés</p>
+            <p>© 2025 – Marie-France Lunganga - Tout droits réservés</p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
     <script src="js/translation.js"></script>
     <script src="js/tabs.js"></script> <!-- Script pour la navigation par onglets -->
 </body>
