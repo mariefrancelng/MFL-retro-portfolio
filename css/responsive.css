@@ -1,152 +1,252 @@
-/* @media pour index.html */
-@media (max-width: 1024px) {
-    #discover-button {
-        font-size: 2rem;
-        padding: 12px 24px;
-        bottom: 45%;
-        left: 46%;
-    }
+/* Media queries pour index.html */
 
-    #lang-select {
-        font-size: 1rem; 
-        padding: 6px 12px; 
+/* Grand écrans (1600px - 1900px) */
+@media (min-width: 1600px) and (max-width: 1900px) {
+    #window_container {
+      max-width: 1400px;
+      height: 75vh;
     }
-
+    
     .star {
-        width: 50%;
-        top: -13%;
-        left: -15%;
+      top: -30%;
+      left: -30%;
+      width: clamp(100px, 50vw, 800px);
     }
-
-    .duo-fruit {
-        width: 46%;
-        bottom: 25%;
-        right: -15%;
+    
+    .duo_fruit {
+      bottom: 0;
+      right: -7%;
+      width: clamp(250px, 47vw, 750px);
     }
-
-    .page1 {
-        width: 102%;
-        bottom: 10%;
-        left: 57%;
-    }
-
-    main h1 {
-        font-size: 6rem;
-        top: 29%;
-        left: 33%;
+    
+    h1 {
+      font-size: clamp(30px, 8vw, 75px);
     }
 }
 
-@media (max-width: 768px) {
-    #discover-button {
-        font-size: 1.5rem; 
-        padding: 10px 20px; 
-        bottom: 72%; 
+@media (min-width: 1200px) and (max-width: 1599px) {
+    #window_container {
+      max-width: 1100px;
+      height: 70vh;
     }
-
-    #lang-select {
-        font-size: 0.9rem; 
-        padding: 5px 10px; 
+    
+    .browser_window {
+      border-radius: clamp(8px, 1.5vw, 12px);
+      border: clamp(2px, 0.4vw, 8px) solid var(--black);
     }
-
+    
+    .window_buttons {
+      padding: clamp(6px, 1.2vw, 9px);
+      border-bottom: clamp(2px, 0.4vw, 8px) solid var(--black);
+    }
+    
     .star {
-        width: 55%;
-        top: -8%;
-        left: -22%;
+     top: -43%;
+     left: -25%;
+     width: clamp(100px, 28vw, 400px);
     }
-
-    .duo-fruit {
-        width: 38%;
-        top: 21%;
-        right: -10%;
-    }
-
-    .page1 {
-        width: 104%;
-        top: -30%;
-        left: 56%;
-    }
-
-    main h1 {
-        font-size: 4rem; 
-        top: 14%; 
+    
+    .duo_fruit {
+     bottom: -22%;
+     right: -16%;
+     width: clamp(220px, 35vw, 500px);
     }
 }
 
-@media (max-width: 480px) {
-    #discover-button {
-        font-size: 1.2rem;
-        padding: 8px 16px;
-        bottom: 30%;
-        left: 37%;
+/* Tablettes et petits ordinateurs (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #window_container {
+      max-width: 900px;
+      height: 45vh;
     }
-
-    #lang-select {
-        font-size: 0.8rem; 
-        padding: 4px 8px; 
+    
+    .browser_window {
+      border: clamp(2px, 0.3vw, 6px) solid var(--black);
+      box-shadow: 0 clamp(4px, 0.8vw, 8px) clamp(12px, 2.5vw, 25px) rgba(0, 0, 0, 0.3);
     }
-
+    
+    .window_buttons {
+      border-bottom: clamp(2px, 0.3vw, 6px) solid var(--black);
+    }
+    
     .star {
-        width: 60%;
-        top: -17%;
-        left: -21%;
+      top: -15%;
+      left: -21%;
+      width: clamp(90px, 36vw, 350px);
     }
-
-    .duo-fruit {
-        width: 40%;
-        top: 56%;
-        right: -7%;
+    
+    .duo_fruit {
+      bottom: 0;
+      right: -5%;
+      width: clamp(200px, 38vw, 370px);
     }
-
-    .page1 {
-        width: 110%;
-        left: 57%;
-        top: 0%;
+    
+    h1 {
+      font-size: clamp(28px, 7vw, 65px);
     }
-
-    main h1 {
-        font-size: 4rem;
-        top: 37%;
-        left: 21%;
+    
+    .window_content {
+      background-size: clamp(8px, 1.8vw, 18px) clamp(8px, 1.8vw, 18px);
     }
 }
 
-/* @media pour home.html */
-@media (max-width: 768px) {
-    .project-card {
-        width: 300px;
-        height: 400px;
+/* Tablettes (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #window_container {
+      width: 92%;
+      max-width: 750px;
+      height: 50vh;
     }
     
-    .project-logo {
-        width: 150px;
+    .browser_window {
+      border-radius: clamp(6px, 1.2vw, 10px);
+      border: clamp(2px, 0.3vw, 5px) solid var(--black);
+      box-shadow: 0 clamp(3px, 0.6vw, 6px) clamp(10px, 2vw, 20px) rgba(0, 0, 0, 0.3);
     }
     
-    .project-button {
-        padding: 0.6rem 1.5rem;
-        font-size: 1rem;
+    .window_buttons {
+      padding: clamp(5px, 1vw, 8px);
+      border-bottom: clamp(2px, 0.3vw, 5px) solid var(--black);
     }
+    
+    .window_button {
+      width: clamp(10px, 1.8vw, 14px);
+      height: clamp(10px, 1.8vw, 14px);
+      margin-left: clamp(4px, 0.8vw, 7px);
+    }
+    
+    .star {
+      top: -24%;
+      left: -23%;
+      width: clamp(80px, 44vw, 350px);
+    }
+    
+    .duo_fruit {
+      bottom: 0;
+      right: -5%;
+      width: clamp(180px, 46vw, 350px);
+    }
+    
+    h1 {
+      font-size: clamp(26px, 8vw, 60px);
+    }
+    
+    .window_content {
+      background-size: clamp(7px, 1.5vw, 15px) clamp(7px, 1.5vw, 15px);
+      padding: clamp(8px, 1.8vw, 18px);
+    }
+}
 
-    .skills-content {
-        grid-template-columns: 1fr;
+/* Tablettes portrait et grands téléphones (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    #window_container {
+      width: 95%;
+      height: 50vh;
     }
+    
+    .browser_window {
+      border-radius: clamp(5px, 1vw, 8px);
+      border: clamp(1px, 0.25vw, 4px) solid var(--black);
+      box-shadow: 0 clamp(3px, 0.5vw, 5px) clamp(8px, 1.5vw, 15px) rgba(0, 0, 0, 0.3);
+    }
+    
+    .window_buttons {
+      padding: clamp(4px, 0.8vw, 6px);
+      border-bottom: clamp(1px, 0.25vw, 4px) solid var(--black);
+    }
+    
+    .window_button {
+      width: clamp(8px, 1.5vw, 12px);
+      height: clamp(8px, 1.5vw, 12px);
+      margin-left: clamp(3px, 0.6vw, 5px);
+    }
+    
+    .minimize::after,
+    .close::before, 
+    .close::after {
+      height: 1px;
+    }
+    
+    .star {
+      top: -12%;
+      left: -17%;
+      width: clamp(70px, 35vw, 200px);
+    }
+    
+    .duo_fruit {
+      bottom: 0;
+      right: -15px;
+      width: clamp(150px, 40vw, 350px);
+    }
+    
+    h1 {
+      font-size: clamp(24px, 10.5vw, 55px);
+    }
+    
+    .window_content {
+      background-size: clamp(6px, 1.2vw, 12px) clamp(6px, 1.2vw, 12px);
+      padding: clamp(6px, 1.5vw, 15px);
+    }
+    
+    #lang-select {
+      top: clamp(8px, 1.5vw, 15px);
+      right: clamp(8px, 1.5vw, 15px);
+      font-size: clamp(12px, 1.2vw, 14px);
+    }
+}
 
-    .footer-decoration {
-        width: 150px;
-        right: 20px;
-        bottom: -20px;
+/* Téléphones mobiles (480px - 575px) */
+@media (min-width: 480px) and (max-width: 575px) {
+    #window_container {
+      width: 98%;
+      height: 30vh;
     }
     
-    .footer-links {
-        gap: 1.5rem;
+    .browser_window {
+      border-radius: 5px;
+      border: 2px solid var(--black);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     }
     
-    .social-link {
-        font-size: 1.2rem;
-        padding: 0.6rem 1.2rem;
+    .window_buttons {
+      padding: 4px;
+      border-bottom: 2px solid var(--black);
     }
     
-    .copyright p {
-        font-size: 0.9rem;
+    .window_button {
+      width: 8px;
+      height: 8px;
+      margin-left: 3px;
+      border: 1px solid var(--black);
+    }
+    
+    .star {
+      top: -6%;
+      left: -11%;
+      width: 120px;
+    }
+    
+    .duo_fruit {
+      bottom: 0;
+      right: -3px;
+      width: 140px;
+    }
+    
+    h1 {
+      font-size: 45px;
+    }
+    
+    .window_content {
+      background-size: 8px 8px;
+      padding: 10px;
+    }
+    
+    #lang-select {
+      top: 8px;
+      right: 8px;
+      font-size: 12px;
+      padding: 2px;
+      border-radius: 3px;
+      border: 1px solid var(--black);
     }
 }

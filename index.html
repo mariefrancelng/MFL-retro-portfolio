@@ -11,37 +11,35 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body id="index">
+<body>
     <header>
         <select name="language" id="lang-select" title="choisir une langue">
-            <option value="fr">🇫🇷</option>
-            <option value="en">🇬🇧</option>
-            <option value="ko">🇰🇷</option>
+            <option value="FR">🇫🇷</option>
+            <option value="EN">🇬🇧</option>
+            <option value="KR">🇰🇷</option>
         </select>
     </header>
 
-    <main>
-        <!-- Éléments décoratifs -->
+    <main id="window_container">
+
         <img src="assets/icons/etoile.svg" alt="étoile" class="star">
-        <img src="assets/icons/duo-fruit.svg" alt="fruits" class="duo-fruit">
+        <img src="assets/icons/duo-fruit.svg" alt="fruits" class="duo_fruit">
     
-        <!-- Fenêtre navigateur -->
-        <div class="browser-window">
-            <div class="title-bar">
-                <div class="title"></div>
-                <div class="buttons">
-                    <div class="button minimize"></div>
-                    <div class="button maximize"></div>
-                    <div class="button close"></div>
-                </div>        
+
+        <div class="browser_window">
+            <div class="window_buttons">
+                <div class="window_button minimize"></div>
+                <div class="window_button maximize"></div>
+                <div class="window_button close"></div>
             </div>
-            <div class="content">
+            
+            <div class="window_content">
                 <h1 data-i18n="welcome">BIENVENUE</h1>
-                <button id="discover-button" data-i18n="discover">Me découvrir</button>
             </div>
         </div>
     </main>
 
+    <script src="js/redirect.js"></script>
     <script src="js/script.js"></script>
     <script src="js/translation.js"></script>
 </body>

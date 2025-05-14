@@ -29,11 +29,11 @@ nav{
 }
 
 .hero-content {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 4rem;
     align-items: center;
     position: relative;
     z-index: 2;
@@ -71,6 +71,10 @@ nav{
   }
 
 .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2.5rem;
     background-color: var(--darkpink);
     width: 50vw;
@@ -79,7 +83,7 @@ nav{
     border: solid 2px var(--black);
     box-shadow: 10px 10px var(--yellow);
     position: relative;
-    display: inline;
+    /*display: inline;*/
 }
 
 .hero-text::after {
@@ -129,7 +133,7 @@ nav{
 }
 
 #main_container.tabbed-interface {
-    max-width: 1200px;
+    width: 100vw;
     margin: 4rem auto;
     padding: 0 2rem;
 }
@@ -194,8 +198,7 @@ nav{
     animation: fadeInUp 0.5s ease forwards;
     margin: 0 auto;
     overflow: hidden;
-    max-width: 67vw;
-    width: 75%;
+    width: 67vw;
 }
 
 .tab-content.active {
@@ -214,6 +217,7 @@ nav{
     border: 10px solid var(--green); 
     border-radius: 30px;
     padding: 2rem;
+    margin-top: 4rem;
     position: relative;
     box-shadow:
         0 0 0 6px var(--black), 
@@ -233,6 +237,10 @@ nav{
     box-sizing: border-box;
     z-index: 1;
     pointer-events: none;
+}
+
+#projects-tab {
+    width: 100%;
 }
 
 .horizontal-scroll {
@@ -300,7 +308,7 @@ nav{
 }
 
 .project-logo {
-    width: 600px;
+    width: 500px;
     height: auto;
     margin: 1rem 0;
 }
@@ -435,7 +443,7 @@ nav{
 }
 
 .modal-header {
-    background-color: var(--darkpink); /* Rose foncé comme dans l'image */
+    background-color: var(--darkpink); 
     padding: 10px 15px;
     height: 40px;
     display: flex;
@@ -535,10 +543,18 @@ nav{
     to { transform: scale(1); opacity: 1; }
 }
 
-.tabcontent {
+#skills-tab {
     position: relative;
     padding: 2rem;
-    display: flex;
+    
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#skills-tab.active {
+    display: flex !important; /* Force le mode flex */
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -569,7 +585,7 @@ nav{
     position: relative;
   
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -702,4 +718,3 @@ nav{
     margin: 6px 0;
     font-size: 0.9rem;
 }
-
